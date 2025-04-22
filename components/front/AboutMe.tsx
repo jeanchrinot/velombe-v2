@@ -1,0 +1,96 @@
+"use client"
+
+import { motion } from "framer-motion"
+import Link from "next/link"
+import { ChevronsDown } from "lucide-react"
+import { TypeAnimation } from "react-type-animation"
+import Image from "next/image"
+import GridPatternDashed from "./GridPattern"
+import HighlightWords from "../snippets/HighlightWords"
+import ButtonLink from "../snippets/ButtonLink"
+import { InteractiveHoverButton } from "../magicui/interactive-hover-button"
+import { TextReveal } from "@/components/magicui/text-reveal"
+import { AuroraText } from "../magicui/aurora-text"
+import RevealOnScroll from "./animations/RevealOnScroll"
+
+const AboutMe = () => {
+  return (
+    <section
+      id="about-me"
+      className="py-20 flex flex-col justify-center items-center text-center px-6 relative"
+    >
+      <GridPatternDashed />
+      <div className="w-full lg:max-w-3xl mx-auto items-center px-2 md:gap-10 md:px-10">
+        {/* Headline */}
+        <RevealOnScroll>
+          <motion.h2 className="font-bold inline-block rounded-lg bg-blue-600 text-background px-3 py-1 text-sm text-white leading-tight mb-3">
+            About Me
+          </motion.h2>
+        </RevealOnScroll>
+
+        <RevealOnScroll>
+          <motion.h3 className="text-4xl sm:text-5xl font-extrabold text-gray-900 dark:text-white leading-tight">
+            Passion meets <AuroraText>purpose.</AuroraText>
+          </motion.h3>
+        </RevealOnScroll>
+
+        {/* Subheadline */}
+        <RevealOnScroll>
+          <motion.p
+            // initial={{ opacity: 0, y: 10 }}
+            // animate={{ opacity: 1, y: 0 }}
+            // transition={{ delay: 1 }}
+            className="mt-4 text-md text-gray-700 dark:text-gray-100 w-full"
+          >
+            I'm Velombe, a <HighlightWords>Full-stack Developer</HighlightWords>{" "}
+            from Madagascar — the world's 4th largest island 🌴 and a place full
+            of natural wonder, culture, and creativity. Currently, I'm pursuing
+            a{" "}
+            <HighlightWords>
+              Master's Degree in Computer Engineering
+            </HighlightWords>
+            , diving deep into both the theoretical and practical sides of
+            building powerful software systems.
+            <br />
+          </motion.p>
+        </RevealOnScroll>
+
+        {/* Subheadline */}
+        <RevealOnScroll>
+          <motion.p
+            // initial={{ opacity: 0, y: 10 }}
+            // animate={{ opacity: 1, y: 0 }}
+            // transition={{ delay: 0.3 }}
+            className="mt-4 text-md text-gray-700 dark:text-gray-100 max-w-[90%]"
+          >
+            My journey into tech started with curiosity and a laptop, and today,
+            I bring together the power of JavaScript and Python stacks to craft
+            everything from sleek frontends to robust backends. Whether it's
+            creating an AI chatbot, designing a SaaS product, or integrating
+            complex APIs — I thrive on turning problems into elegant digital
+            tools.
+          </motion.p>
+        </RevealOnScroll>
+
+        {/* CTA Button */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5 }}
+          className="mt-8"
+        >
+          {/* <ButtonLink
+            href={"#tech-stack"}
+            text="My Tech Stack"
+            icon={<ChevronsDown className="ml-2 w-4 h-4" />}
+          /> */}
+          {/* <a href="#tech-stack">
+            <InteractiveHoverButton>My Tech Stack</InteractiveHoverButton>
+          </a> */}
+        </motion.div>
+      </div>
+    </section>
+  )
+}
+
+export default AboutMe
