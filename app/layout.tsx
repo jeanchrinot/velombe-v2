@@ -9,11 +9,6 @@ const inter = Inter({
   subsets: ["latin"],
 })
 
-export const metadata: Metadata = {
-  title: "Velombe",
-  description: "Welcome to Velombe's website.",
-}
-
 export default function RootLayout({
   children,
 }: Readonly<{

@@ -9,8 +9,9 @@ import DockMenu from "@/components/front/Dock"
 import TechnicalSkills from "@/components/front/TechnicalSkills"
 
 export const metadata: Metadata = {
-  title: "Velombe",
-  description: "Welcome to Velombe's website.",
+  title: "Velombe | Full-Stack Developer",
+  description:
+    "I'm a passionate Full-stack Developer with hands-on experience in building SaaS platforms, AI chatbots integrations, and scalable web applications . Proficient in modern JS and Python stacks with a strong focus on LLM integration, chatbot systems, and web application architecture.",
 }
 
 const Home = () => {
