@@ -1,11 +1,6 @@
-import { ArrowRightIcon } from "@radix-ui/react-icons"
 import { ComponentPropsWithoutRef, ReactNode } from "react"
-
-import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
-import Image from "next/image"
 import { Box, Github, Link } from "lucide-react"
-import { AuroraText } from "./aurora-text"
 
 interface BentoGridProps extends ComponentPropsWithoutRef<"div"> {
   children: ReactNode
@@ -41,7 +36,6 @@ const BentoCard = ({
   name,
   className,
   shortDesc,
-  image,
   fullDesc,
   tech,
   links,

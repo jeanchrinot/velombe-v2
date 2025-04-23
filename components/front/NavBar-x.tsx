@@ -3,7 +3,6 @@
 import Link from "next/link"
 import { useEffect, useState } from "react"
 import { Menu, X } from "lucide-react"
-import { useTheme } from "next-themes"
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -95,7 +94,7 @@ const Header = () => {
             className="block bg-blue-600 text-white text-center px-4 py-2 rounded-md font-medium hover:bg-blue-700"
             onClick={() => setIsOpen(false)}
           >
-            🚀 Let’s Talk
+            {"🚀 Let's Talk"}
           </Link>
         </div>
       )}

@@ -373,7 +373,6 @@ const TechCard = ({ name, icon }: { name: string; icon: any }) => {
         "border-gray-200 dark:border-white/10"
       )}
     >
-      {/* <img src={`/img/${img}`} alt={name} className="h-6 w-6" /> */}
       {icon}
       <span className="text-sm font-medium text-gray-900 dark:text-white">
         {name}

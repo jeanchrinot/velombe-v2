@@ -1,15 +1,8 @@
 "use client"
 
 import { motion } from "framer-motion"
-import Link from "next/link"
-import { ChevronsDown } from "lucide-react"
-import { TypeAnimation } from "react-type-animation"
-import Image from "next/image"
 import GridPatternDashed from "./GridPattern"
 import HighlightWords from "../snippets/HighlightWords"
-import ButtonLink from "../snippets/ButtonLink"
-import { InteractiveHoverButton } from "../magicui/interactive-hover-button"
-import { TextReveal } from "@/components/magicui/text-reveal"
 import { AuroraText } from "../magicui/aurora-text"
 import RevealOnScroll from "./animations/RevealOnScroll"
 
@@ -36,18 +29,13 @@ const AboutMe = () => {
 
         {/* Subheadline */}
         <RevealOnScroll>
-          <motion.p
-            // initial={{ opacity: 0, y: 10 }}
-            // animate={{ opacity: 1, y: 0 }}
-            // transition={{ delay: 1 }}
-            className="mt-4 text-md text-gray-700 dark:text-gray-100 w-full"
-          >
-            My full name is Jean Chrinot Velombe, but I like to be called by my
+          <motion.p className="mt-4 text-md text-gray-700 dark:text-gray-100 w-full">
+            {`My full name is Jean Chrinot Velombe, but I like to be called by my
             last name. I'm originally from Madagascar — the world's 4th largest
             island 🌴 and a place full of natural wonder, culture, and
-            creativity. Currently, I'm pursuing a{" "}
+            creativity. Currently, I'm pursuing a `}
             <HighlightWords>
-              Master's Degree in Computer Engineering
+              {"Master's Degree in Computer Engineering"}
             </HighlightWords>{" "}
             at Kocaeli University, in Türkiye, diving deep into both the
             theoretical and practical sides of building powerful software
@@ -58,37 +46,15 @@ const AboutMe = () => {
 
         {/* Subheadline */}
         <RevealOnScroll>
-          <motion.p
-            // initial={{ opacity: 0, y: 10 }}
-            // animate={{ opacity: 1, y: 0 }}
-            // transition={{ delay: 0.3 }}
-            className="mt-4 text-md text-gray-700 dark:text-gray-100 max-w-[90%]"
-          >
-            My journey into tech started with curiosity and a laptop, and today,
+          <motion.p className="mt-4 text-md text-gray-700 dark:text-gray-100 max-w-[90%]">
+            {`My journey into tech started with curiosity and a laptop, and today,
             I bring together the power of JavaScript and Python stacks to craft
             everything from sleek frontends to robust backends. Whether it's
             creating an AI chatbot, designing a SaaS product, or integrating
             complex APIs — I thrive on turning problems into elegant digital
-            tools.
+            tools.`}
           </motion.p>
         </RevealOnScroll>
-
-        {/* CTA Button */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5 }}
-          className="mt-8"
-        >
-          {/* <ButtonLink
-            href={"#tech-stack"}
-            text="My Tech Stack"
-            icon={<ChevronsDown className="ml-2 w-4 h-4" />}
-          /> */}
-          {/* <a href="#tech-stack">
-            <InteractiveHoverButton>My Tech Stack</InteractiveHoverButton>
-          </a> */}
-        </motion.div>
       </div>
     </section>
   )

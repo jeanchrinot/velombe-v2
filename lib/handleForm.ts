@@ -20,6 +20,7 @@ async function handleForm({
       success: "Thanks for contacting me! I will reach out to you soon.",
     }
   } catch (e) {
+    console.log("e", e)
     return {
       error:
         "Oops! Something went wrong while trying to handle your request. Please, try again later.",

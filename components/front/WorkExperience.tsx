@@ -6,7 +6,6 @@ import { motion } from "framer-motion"
 import HighlightWords from "../snippets/HighlightWords"
 import { BriefcaseBusiness } from "lucide-react"
 import { AuroraText } from "../magicui/aurora-text"
-import { BorderBeam } from "@/components/magicui/border-beam"
 import { MagicCard } from "@/components/magicui/magic-card"
 import { useTheme } from "next-themes"
 import RevealOnScroll from "./animations/RevealOnScroll"
@@ -73,7 +72,7 @@ const WorkExperience = () => {
         </RevealOnScroll>
         <RevealOnScroll>
           <motion.h3 className="text-4xl sm:text-5xl font-extrabold text-gray-900 dark:text-white leading-tight">
-            Where I've built <AuroraText>and grown.</AuroraText>
+            {"Where I've built"} <AuroraText>and grown.</AuroraText>
           </motion.h3>
         </RevealOnScroll>
         <RevealOnScroll>
@@ -82,14 +81,14 @@ const WorkExperience = () => {
             <HighlightWords>
               over 6 years of professional experience
             </HighlightWords>{" "}
-            as a Full-Stack Developer, I specialize in building modern, scalable
+            {`as a Full-Stack Developer, I specialize in building modern, scalable
             web applications using JavaScript (Next.js, React) and Python
             (Django). I've contributed to SaaS platforms, AI chatbot
             integrations, and customer support automation tools—crafting both
             frontend interfaces and backend architectures. My work spans from
             startup environments to academic research projects, combining clean
             code, user-centered design, and automation to deliver impactful
-            solutions.
+            solutions.`}
           </motion.p>
         </RevealOnScroll>
       </div>

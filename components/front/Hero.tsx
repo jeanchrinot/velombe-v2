@@ -1,20 +1,14 @@
 "use client"
 
-import { motion, useInView } from "framer-motion"
-import Link from "next/link"
-import { ChevronsDown, Sparkles } from "lucide-react"
+import { motion } from "framer-motion"
 import { TypeAnimation } from "react-type-animation"
 import Image from "next/image"
-import SparkleBackground from "./SparkleBackground"
 import GridPatternDashed from "./GridPattern"
-import ButtonLink from "../snippets/ButtonLink"
-import { InteractiveHoverButton } from "@/components/magicui/interactive-hover-button"
 import { Particles } from "@/components/magicui/particles"
 import { useTheme } from "next-themes"
 import { useEffect, useState } from "react"
 import { AuroraText } from "@/components/magicui/aurora-text"
 import { BorderBeam } from "@/components/magicui/border-beam"
-import RevealOnScroll from "./animations/RevealOnScroll"
 
 const Hero = () => {
   const { resolvedTheme } = useTheme()
@@ -67,7 +61,7 @@ const Hero = () => {
           <div className="z-10 md:max-w-3xl">
             {/* Headline */}
             <motion.h2 className="text-4xl md:text-5xl font-light text-gray-900 dark:text-white leading-tight tracking-wide">
-              Hello!👋 I'm{" "}
+              {"Hello!👋 I'm "}
               <span className="font-extrabold">
                 <AuroraText>Velombe.</AuroraText>
               </span>
@@ -96,7 +90,7 @@ const Hero = () => {
 
             {/* Subheadline */}
             <motion.p className="mt-10 text-md text-gray-700 dark:text-gray-100 md:max-w-[80%] text-center md:text-left">
-              I'm a passionate{" "}
+              {"I'm a passionate "}
               <span className="bg-blue-600 text-white px-1 rounded italic font-light">
                 Full-stack Developer
               </span>{" "}

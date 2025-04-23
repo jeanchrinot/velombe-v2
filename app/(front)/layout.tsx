@@ -1,7 +1,5 @@
 import Footer from "@/components/front/Footer"
 import Header from "@/components/front/Header"
-import Navbar from "@/components/front/Navbar"
-import { ThemeToggle } from "@/components/themeToggle"
 
 export default function FrontLayout({
   children,
@@ -12,7 +10,6 @@ export default function FrontLayout({
     <>
       <Header />
       {children}
-      {/* <ThemeToggle /> */}
       <Footer />
     </>
   )

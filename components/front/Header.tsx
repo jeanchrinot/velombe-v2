@@ -2,21 +2,15 @@
 
 import Link from "next/link"
 import { useEffect, useState } from "react"
-import { Handshake, Menu, X } from "lucide-react"
-import { useTheme } from "next-themes"
-import NavBar from "./Navbar"
-import Image from "next/image"
+import { Handshake } from "lucide-react"
 import Logo from "./Logo"
 import { AnimatedGradientText } from "@/components/magicui/animated-gradient-text"
 import { RainbowButton } from "@/components/magicui/rainbow-button"
 import { Separator } from "../ui/separator"
 
 const Header = () => {
-  const { theme } = useTheme()
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
-
-  const toggleMenu = () => setIsOpen(!isOpen)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -51,7 +45,7 @@ const Header = () => {
               🚀 On the lookout for my next big adventure in tech. Got a role
               where I can make an impact?{" "}
               <a href="#contact" className="underline">
-                Let's connect
+                {`Let's connect`}
               </a>
               .
             </AnimatedGradientText>

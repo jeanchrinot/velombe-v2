@@ -29,8 +29,8 @@ const Testimonials = () => {
         {/* Subheadline */}
         <RevealOnScroll>
           <motion.p className="mt-4 text-md text-foreground w-full">
-            Here's what clients, collaborators, and colleagues have said about
-            working with me — honest feedback, real results.
+            {`Here's what clients, collaborators, and colleagues have said about
+            working with me — honest feedback, real results.`}
           </motion.p>
         </RevealOnScroll>
       </div>

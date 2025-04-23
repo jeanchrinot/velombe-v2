@@ -1,14 +1,9 @@
 "use client"
-import { Github, Link } from "lucide-react"
-import Image from "next/image"
 import GridPatternDashed from "./GridPattern"
 import { motion } from "framer-motion"
 import HighlightWords from "../snippets/HighlightWords"
-import { Lens } from "@/components/magicui/lens"
 import { AuroraText } from "../magicui/aurora-text"
-import { MagicCard } from "../magicui/magic-card"
 import { BentoCard, BentoGrid } from "@/components/magicui/projects-bento-grid"
-import { useTheme } from "next-themes"
 
 const projects = [
   {
@@ -73,8 +68,6 @@ const projects = [
 ]
 
 export default function Projects() {
-  const { theme } = useTheme()
-
   return (
     <section
       id="projects"
@@ -97,7 +90,7 @@ export default function Projects() {
           transition={{ duration: 0.6 }}
           className="text-4xl sm:text-5xl font-extrabold text-gray-900 dark:text-white leading-tight"
         >
-          What I've been <AuroraText>building.</AuroraText>
+          {"What I've been"} <AuroraText>building.</AuroraText>
         </motion.h3>
         <motion.p
           initial={{ opacity: 0, y: 10 }}

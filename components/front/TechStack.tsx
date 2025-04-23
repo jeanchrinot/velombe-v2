@@ -1,6 +1,7 @@
 "use client"
 import { motion } from "framer-motion"
 import { AuroraText } from "../magicui/aurora-text"
+import HighlightWords from "../snippets/HighlightWords"
 import RevealOnScroll from "./animations/RevealOnScroll"
 import GridPatternDashed from "./GridPattern"
 import MarqueeTechStack from "./MarqueeTechStack"
@@ -28,14 +29,16 @@ const TechStack = () => {
         {/* Subheadline */}
         <RevealOnScroll>
           <motion.p className="mt-4 text-md text-foreground w-full">
-            I specialize in building robust, modern web applications using a
-            powerful combination of tools and frameworks. On the frontend, I
-            craft smooth user experiences with Next.js, React, and Tailwind CSS.
-            On the backend, I rely on the versatility of Python, Node.js, and
-            Laravel to power scalable APIs and logic. Whether it's designing
-            responsive UIs or developing efficient server-side architectures, I
-            enjoy working across the full stack to deliver high-quality
-            solutions.
+            My tech stack includes{" "}
+            <HighlightWords>a blend of modern tools</HighlightWords> and
+            languages that I use to build efficient and maintainable software. I
+            work with React, Next.js, and Tailwind CSS on the frontend to build
+            responsive, interactive UIs. On the backend, I use Python and
+            Node.js to develop APIs and application logic. I also integrate
+            databases like PostgreSQL, MySQL, and MongoDB, and use cloud
+            services like DigitalOcean for seamless deployment. For AI-powered
+            applications, I work with LLM frameworks such as LangChain and
+            LangGraph to build intelligent, context-aware systems.
           </motion.p>
         </RevealOnScroll>
       </div>

@@ -22,18 +22,19 @@ const Contact = () => {
 
         <RevealOnScroll>
           <motion.h3 className="text-4xl sm:text-5xl font-extrabold text-gray-900 dark:text-white leading-tight">
-            Let's get <AuroraText>in touch.</AuroraText>
+            {"Let's get"} <AuroraText>in touch.</AuroraText>
           </motion.h3>
         </RevealOnScroll>
 
         {/* Subheadline */}
         <RevealOnScroll>
           <motion.p className="mt-4 text-md text-foreground w-full">
-            I'm always open to new opportunities and collaborations — whether
+            {`I'm always open to new opportunities and collaborations — whether
             it's a freelance gig, a full-time role, or just a cool side project.
-            Drop me a message at{" "}
-            <HighlightWords>hello@velombe.com</HighlightWords> or using the form
-            below and I'll get back to you as soon as I can.
+            Drop me a message at `}
+            <HighlightWords>hello@velombe.com</HighlightWords>{" "}
+            {`or using the form
+            below and I'll get back to you as soon as possible.`}
           </motion.p>
         </RevealOnScroll>
       </div>
