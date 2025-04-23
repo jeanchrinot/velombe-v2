@@ -23,7 +23,7 @@ const Home = () => {
       <TechnicalSkills />
       <TechStack />
       <Projects />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Contact />
       <DockMenu />
     </>

@@ -42,15 +42,16 @@ const AboutMe = () => {
             // transition={{ delay: 1 }}
             className="mt-4 text-md text-gray-700 dark:text-gray-100 w-full"
           >
-            I'm Velombe, a <HighlightWords>Full-stack Developer</HighlightWords>{" "}
-            from Madagascar — the world's 4th largest island 🌴 and a place full
-            of natural wonder, culture, and creativity. Currently, I'm pursuing
-            a{" "}
+            My full name is Jean Chrinot Velombe, but I like to be called by my
+            last name. I'm originally from Madagascar — the world's 4th largest
+            island 🌴 and a place full of natural wonder, culture, and
+            creativity. Currently, I'm pursuing a{" "}
             <HighlightWords>
               Master's Degree in Computer Engineering
-            </HighlightWords>
-            , diving deep into both the theoretical and practical sides of
-            building powerful software systems.
+            </HighlightWords>{" "}
+            at Kocaeli University, in Türkiye, diving deep into both the
+            theoretical and practical sides of building powerful software
+            systems.
             <br />
           </motion.p>
         </RevealOnScroll>

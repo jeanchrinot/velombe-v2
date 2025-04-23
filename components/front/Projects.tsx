@@ -17,6 +17,7 @@ const projects = [
     fullDesc:
       "A platform that allows users to create, customize, and deploy AI chatbots with ease. Includes flow builder, analytics, and multi-channel integration.",
     image: "/img/projects/aixflows.png",
+    video: "/video/aixflows.mp4",
     tech: [
       "Next.js",
       "Tailwind CSS",
@@ -37,6 +38,7 @@ const projects = [
     fullDesc:
       "A customizable chat widget built with React, TypeScript, and Vite, designed to be easily embedded into any website using a simple JavaScript snippet.",
     image: "/img/projects/food-advisor.png",
+    video: "/video/chat-widget.mp4",
     tech: ["React", "Tailwind CSS", "Vite", "TypeScript"],
     links: {
       github: "https://github.com/jeanchrinot/chat-widget",
@@ -50,6 +52,7 @@ const projects = [
     fullDesc:
       "Mobile-first app that helps users analyze food nutrition using image recognition and gives personalized recommendations.",
     image: "/img/projects/food-advisor.png",
+    video: "/video/food-advisor.mp4",
     tech: ["Next.js", "Python", "OpenAI", "CNN", "MongoDB", "LangChain"],
     links: {
       github: "https://github.com/jeanchrinot/food-advisor",
@@ -108,12 +111,12 @@ export default function Projects() {
                 className="w-full object-cover h-36 rounded-none"
               /> */}
               <video
-                src="https://cdn.llm.report/openai-demo.mp4"
+                src={project.video}
                 autoPlay={true}
                 loop={true}
                 muted={true}
                 playsInline={true}
-                className="pointer-events-none mx-auto h-40 w-full object-cover object-top opacity-40"
+                className="pointer-events-none mx-auto h-40 w-full object-cover object-top"
               ></video>
               <div className="py-4 px-5 flex flex-col gap-1 justify-start text-left">
                 <h3 className="text-xl font-bolder">

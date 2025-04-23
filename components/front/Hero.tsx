@@ -73,7 +73,7 @@ const Hero = () => {
               </span>
             </motion.h2>
 
-            <motion.h1 className="mt-2 text-2xl md:text-4xl sm:text-5xl font-extrabold text-gray-900 dark:text-white leading-tight">
+            <motion.h1 className="mt-2 text-2xl md:text-5xl font-extrabold text-gray-900 dark:text-white leading-tight">
               {/* <span className="mr-3">I'm</span> */}
               <TypeAnimation
                 sequence={[
