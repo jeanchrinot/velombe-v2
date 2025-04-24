@@ -1,5 +1,6 @@
 import Footer from "@/components/front/Footer"
 import Header from "@/components/front/Header"
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL
 
 export const metadata = {
   title: "Velombe | Full-Stack Developer",
@@ -28,7 +29,7 @@ export const metadata = {
     siteName: "Velombe",
     images: [
       {
-        url: "/img/velombe.jpg",
+        url: `${baseUrl}/img/velombe.jpg`,
         width: 604,
         height: 610,
       },
